@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".SendSMS">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        />
+
+    <RelativeLayout
+        android:layout_below="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/toop"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="7">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0.50"
+                android:id="@+id/backg"
+                android:src="@drawable/backg" />
+
+            <LinearLayout
+                android:id="@+id/nameplat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_weight="4.50"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:id="@+id/coverImage"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/girl" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Sumaiya Khan"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:text="Active Now"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/call"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:src="@drawable/baseline_video_call_24" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:src="@drawable/baseline_privacy_tip_24" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/yop2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/toop"
+        app:cardCornerRadius="20sp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="#14000000"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="If you send sticker your friends\nwill see your message first"
+                android:gravity="center"
+                android:textStyle="italic"
+                />
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_below="@id/yop2"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/give"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ImageView
+                android:layout_marginEnd="10dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/flowers"
+                />
+            <ImageView
+                android:layout_marginEnd="20dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/emoji"
+                /> <ImageView
+            android:layout_marginEnd="20dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/kiss"
+            />
+
+            <ImageView
+                android:layout_marginEnd="20dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/relationship"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        android:layout_centerInParent="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/white"
+        app:cardCornerRadius="25sp"
+        android:layout_marginEnd="20sp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/tv"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:background="#1344E0"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15sp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="20sp"
+                android:layout_marginStart="20sp"
+                >
+                <EditText
+                    android:background="@null"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Type a message..."
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#A12C2828"
+
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/baseline_send_24" />
+
+
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

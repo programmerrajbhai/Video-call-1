@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1039678756117",
+    "project_id": "mira-live",
+    "storage_bucket": "mira-live.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039678756117:android:41dc01d17fd23d3620851c",
+        "android_client_info": {
+          "package_name": "com.girl.videocall"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA83ox5vKQ_Bi_RS5Zy7ydN_VI7SPYmhE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
